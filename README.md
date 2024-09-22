@@ -1,4 +1,4 @@
-# Docker REST API Base - Technical Testing
+# Docker REST API Base
 
 ## Pendahuluan
 Proyek ini adalah sebuah aplikasi REST API berbasis Laravel yang dijalankan menggunakan Docker. Berikut adalah langkah-langkah untuk memulai proyek ini di lingkungan pengembangan lokal Anda.
