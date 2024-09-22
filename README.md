@@ -89,3 +89,21 @@ Sekarang Anda dapat mengakses aplikasi melalui URL:
 ```bash
 http://localhost:80/
 ```
+
+### Catatan
+Pastikan semua service berjalan dengan baik di Docker.
+```bash
+  docker-compose ps
+```
+Untuk mengakses perintah Laravel lainnya, Anda bisa menjalankannya melalui container artisan.
+```bash
+docker compose run --rm artisan 
+```
+Jika terjadi tabrakan port (misalnya port 80 atau 3306 sudah digunakan oleh aplikasi lain), Anda bisa mengubah nomor port di file docker-compose.yml. Misalnya, Anda dapat mengubah port 80 menjadi 8080 seperti berikut:
+```bash
+services:
+  nginx:
+    ports:
+      - 8080:80
+```
+Setelah itu, akses kembali aplikasi melalui http://localhost:8080/.
