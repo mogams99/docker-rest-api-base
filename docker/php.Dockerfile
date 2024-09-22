@@ -1,5 +1,8 @@
 FROM php:8.2-fpm-alpine
 
+# Install nano editor
+RUN apk update && apk add nano
+
 # Menambahkan konfigurasi PHP-FPM
 ADD ./docker/php/www.conf /usr/local/etc/php-fpm.d/www.conf
 
