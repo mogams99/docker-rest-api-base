@@ -15,3 +15,8 @@ Pastikan Anda telah menginstal software berikut di sistem Anda:
 Clone repository ini ke direktori lokal Anda:
 ```bash
 git clone https://github.com/username/docker-rest-api-base.git
+
+### 2. Masuk ke Directori Project
+Pindah ke direktori project docker-rest-api-base:
+```bash
+cd docker-rest-api-base
