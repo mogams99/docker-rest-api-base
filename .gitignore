@@ -1,0 +1,8 @@
+# Allow the src and postgres-data directories
+!mysql/
+
+# But still ignore all contents within these directories
+mysql/*
+
+# Except for .gitignore files in these directories to keep them tracked
+!mysql/.gitignore
